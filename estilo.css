@@ -1,0 +1,38 @@
+table,
+th,
+td {
+  border: 1px #111 ridge;
+  border-collapse: collapse;
+}
+
+td:empty {
+  background-color: #bbb;
+}
+
+table {
+  max-width: 90%;
+}
+
+th {
+  background-color: #ffc;
+}
+
+* {
+  font-family: monospace;
+  margin: 4px;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffe3bc;
+}
+
+button {
+  border: #fd0 5px inset;
+  border-radius: 3px;
+  background-color: #ffc;
+}
+
+button:hover {
+  filter: contrast(180%);
+}
