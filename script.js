@@ -14,12 +14,11 @@ function getUrl(nP, tamanyo) {
 
 async function muestraDatos() {
   try {
+    tabula.innerHTML = "";
     dir = getUrl(nPaginas.value, nCartas.value);
     const resp = await fetch(dir);
     const datos = await resp.json();
     let cartas = datos.cards;
-
-    console.log(dir);
 
     for (i = 0; i < cartas.length; i++) {
       fila = document.createElement("tr");
